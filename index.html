@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#176b4d">
+  <meta name="description" content="زاد المسلم - القرآن والأذكار والتسبيح ومواقيت الصلاة">
+  <title>زاد المسلم | رفيق يومك</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="زاد المسلم - الرئيسية">
+      <span class="brand-mark">☪</span><span><strong>زاد المسلم</strong><small>رفيق يومك إلى الخير</small></span>
+    </a>
+    <button id="themeToggle" class="icon-btn" aria-label="تغيير المظهر" title="تغيير المظهر">◐</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيمِ</span>
+        <h1>اجعل لروحك<br><em>نصيبًا كل يوم</em></h1>
+        <p>قرآن، أذكار، تسبيح، ومواقيت الصلاة في مكان واحد.</p>
+        <a class="primary-btn" href="#daily">ابدأ وردك اليومي <span>←</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="moon">☾</div><div class="dome"></div><div class="minaret"></div><div class="stars">✦　·　✧<br>　✧　·　✦</div></div>
+    </section>
+
+    <section id="daily" class="daily-card">
+      <div><span class="section-kicker">آية اليوم</span><h2>وَاذْكُر رَّبَّكَ إِذَا نَسِيتَ</h2><p class="verse-ref">سورة الكهف — الآية ٢٤</p></div>
+      <button class="text-btn" id="copyVerse">نسخ الآية ⧉</button>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><div><span class="section-kicker">مساحتك الإيمانية</span><h2>ماذا تحب أن تقرأ اليوم؟</h2></div></div>
+      <div class="feature-grid">
+        <button class="feature-card" data-view="quran"><span class="feature-icon green">۞</span><strong>القرآن الكريم</strong><small>السور والورد اليومي</small><span class="card-arrow">←</span></button>
+        <button class="feature-card" data-view="azkar"><span class="feature-icon mint">☘</span><strong>الأذكار</strong><small>صباح ومساء وأذكار متنوعة</small><span class="card-arrow">←</span></button>
+        <button class="feature-card" data-view="tasbih"><span class="feature-icon gold">◉</span><strong>المسبحة الإلكترونية</strong><small>سبّح واحفظ عددك</small><span class="card-arrow">←</span></button>
+        <button class="feature-card" data-view="prayer"><span class="feature-icon blue">☼</span><strong>مواقيت الصلاة</strong><small>حسب مدينتك</small><span class="card-arrow">←</span></button>
+      </div>
+    </section>
+
+    <section id="contentPanel" class="content-panel" hidden>
+      <div class="panel-head"><div><span class="section-kicker">زاد المسلم</span><h2 id="panelTitle">القسم</h2></div><button id="closePanel" class="icon-btn" aria-label="إغلاق">✕</button></div>
+      <div id="panelContent"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><div><span class="section-kicker">خطوات صغيرة وأجر عظيم</span><h2>وردك اليومي</h2></div><span id="progressLabel" class="progress-label">٠ من ٣</span></div>
+      <div class="progress-track"><span id="progressBar"></span></div>
+      <div class="checklist">
+        <label><input type="checkbox" data-task="quran"> قراءة شيء من القرآن</label>
+        <label><input type="checkbox" data-task="azkar"> أذكار الصباح أو المساء</label>
+        <label><input type="checkbox" data-task="salawat"> الصلاة على النبي ﷺ</label>
+      </div>
+      <p class="muted tiny">يُحفظ تقدمك على هذا الجهاز فقط.</p>
+    </section>
+
+    <section class="quote-card"><span class="quote-mark">“</span><p>أحب الأعمال إلى الله أدومها وإن قل.</p><small>متفق عليه</small></section>
+  </main>
+
+  <footer><div class="footer-mark">☪</div><strong>زاد المسلم</strong><p>اللهم اجعله علمًا نافعًا وصدقةً جارية.</p><small>محتوى تعريفي أولي — يُرجى مراجعة النصوص والمصادر قبل الإطلاق العام.</small></footer>
+
+  <nav class="bottom-nav" aria-label="التنقل الرئيسي">
+    <a href="#" class="nav-item active"><span>⌂</span>الرئيسية</a>
+    <button class="nav-item" data-view="quran"><span>۞</span>القرآن</button>
+    <button class="nav-item" data-view="azkar"><span>☘</span>الأذكار</button>
+    <button class="nav-item" data-view="tasbih"><span>◉</span>التسبيح</button>
+  </nav>
+  <script src="./app.js"></script>
+</body>
+</html>
