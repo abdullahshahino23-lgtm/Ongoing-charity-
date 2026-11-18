@@ -1,14 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="112" fill="#176b4d"/>
-  <circle cx="292" cy="212" r="118" fill="#e8d6a5"/>
-  <circle cx="338" cy="184" r="100" fill="#176b4d"/>
-  <circle cx="392" cy="120" r="10" fill="#e8d6a5"/>
-  <circle cx="150" cy="120" r="7" fill="#e8d6a5"/>
-  <circle cx="120" cy="200" r="5" fill="#e8d6a5"/>
-  <path d="M256 300c-42 0-76 28-76 62v26h152v-26c0-34-34-62-76-62z" fill="#f4e6bd"/>
-  <rect x="252" y="238" width="8" height="56" fill="#f4e6bd"/>
-  <circle cx="256" cy="230" r="11" fill="#f4e6bd"/>
-  <rect x="356" y="238" width="28" height="150" rx="9" fill="#d4b774"/>
-  <path d="M348 238h44l-6-22a16 16 0 0 0-32 0z" fill="#e8d6a5"/>
-  <rect x="172" y="388" width="168" height="14" rx="7" fill="#0f5138"/>
+  <defs>
+    <linearGradient id="bg" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="512" y2="512">
+      <stop offset="0" stop-color="#065f46"/>
+      <stop offset=".55" stop-color="#0b8a5f"/>
+      <stop offset="1" stop-color="#10b981"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".3" r=".6">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".30"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <rect width="512" height="512" rx="112" fill="url(#glow)"/>
+  <circle cx="298" cy="186" r="112" fill="#f6cf5e"/>
+  <circle cx="346" cy="156" r="96" fill="url(#bg)"/>
+  <path d="M394 88l7 19 19 7-19 7-7 19-7-19-19-7 19-7z" fill="#ffe9a8"/>
+  <circle cx="126" cy="116" r="7" fill="#ffe9a8"/>
+  <circle cx="94" cy="196" r="5" fill="#ffe9a8"/>
+  <circle cx="162" cy="78" r="4" fill="#ffe9a8"/>
+  <g fill="#fff7e0">
+    <path d="M256 266c-46 0-82 30-82 68v22h164v-22c0-38-36-68-82-68z"/>
+    <rect x="252" y="202" width="8" height="60"/>
+    <circle cx="256" cy="194" r="12"/>
+  </g>
+  <g fill="#f2cd6b">
+    <rect x="352" y="230" width="30" height="128" rx="10"/>
+    <path d="M344 230h46l-7-24a16 16 0 0 0-32 0z"/>
+    <rect x="130" y="230" width="30" height="128" rx="10"/>
+    <path d="M122 230h46l-7-24a16 16 0 0 0-32 0z"/>
+  </g>
+  <rect x="128" y="372" width="256" height="12" rx="6" fill="#065f46" opacity=".55"/>
 </svg>
