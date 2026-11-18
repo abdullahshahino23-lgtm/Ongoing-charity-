@@ -12,22 +12,24 @@
   </defs>
   <rect width="512" height="512" rx="112" fill="url(#bg)"/>
   <rect width="512" height="512" rx="112" fill="url(#glow)"/>
-  <circle cx="298" cy="186" r="112" fill="#f6cf5e"/>
-  <circle cx="346" cy="156" r="96" fill="url(#bg)"/>
-  <path d="M394 88l7 19 19 7-19 7-7 19-7-19-19-7 19-7z" fill="#ffe9a8"/>
-  <circle cx="126" cy="116" r="7" fill="#ffe9a8"/>
-  <circle cx="94" cy="196" r="5" fill="#ffe9a8"/>
-  <circle cx="162" cy="78" r="4" fill="#ffe9a8"/>
-  <g fill="#fff7e0">
-    <path d="M256 266c-46 0-82 30-82 68v22h164v-22c0-38-36-68-82-68z"/>
-    <rect x="252" y="202" width="8" height="60"/>
-    <circle cx="256" cy="194" r="12"/>
+  <circle cx="306" cy="150" r="80" fill="#f6cf5e"/>
+  <circle cx="338" cy="128" r="68" fill="url(#bg)"/>
+  <path d="M404 62l6 16 16 6-16 6-6 16-6-16-16-6 16-6z" fill="#ffe9a8"/>
+  <circle cx="118" cy="110" r="6" fill="#ffe9a8"/>
+  <circle cx="86" cy="180" r="4" fill="#ffe9a8"/>
+  <g fill="#fff7e0" stroke="#d9a62e" stroke-width="5" stroke-linejoin="round">
+    <path d="M256 282c-46-28-106-32-148-18v122c42-14 102-10 148 18z"/>
+    <path d="M256 282c46-28 106-32 148-18v122c-42-14-102-10-148 18z"/>
   </g>
-  <g fill="#f2cd6b">
-    <rect x="352" y="230" width="30" height="128" rx="10"/>
-    <path d="M344 230h46l-7-24a16 16 0 0 0-32 0z"/>
-    <rect x="130" y="230" width="30" height="128" rx="10"/>
-    <path d="M122 230h46l-7-24a16 16 0 0 0-32 0z"/>
+  <line x1="256" y1="282" x2="256" y2="404" stroke="#d9a62e" stroke-width="5"/>
+  <g stroke="#d9a62e" stroke-width="6" stroke-linecap="round">
+    <line x1="132" y1="308" x2="216" y2="296"/>
+    <line x1="132" y1="334" x2="216" y2="322"/>
+    <line x1="132" y1="360" x2="216" y2="348"/>
+    <line x1="296" y1="296" x2="380" y2="308"/>
+    <line x1="296" y1="322" x2="380" y2="334"/>
+    <line x1="296" y1="348" x2="380" y2="360"/>
   </g>
-  <rect x="128" y="372" width="256" height="12" rx="6" fill="#065f46" opacity=".55"/>
+  <path d="M338 388v44l11-9 11 9v-44z" fill="#f2cd6b"/>
+  <rect x="104" y="402" width="304" height="12" rx="6" fill="#065f46" opacity=".55"/>
 </svg>
