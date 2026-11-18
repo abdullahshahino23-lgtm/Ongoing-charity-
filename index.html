@@ -29,6 +29,20 @@
       <div class="hero-art" aria-hidden="true"><div class="moon">☾</div><div class="dome"></div><div class="minaret"></div><div class="stars">✦　·　✧<br>　✧　·　✦</div></div>
     </section>
 
+    <section class="prayer-strip" id="prayerStrip" aria-label="مواقيت اليوم">
+      <div class="strip-main">
+        <span class="section-kicker">اليوم</span>
+        <div id="hijriDate" class="hijri-date">جارٍ تحميل التاريخ الهجري…</div>
+        <div class="next-prayer"><span id="nextPrayerLabel">الصلاة القادمة</span><strong id="nextPrayerTime">—</strong><span id="nextPrayerCountdown" class="countdown">—</span></div>
+        <div class="strip-city"><span id="stripCity">الرياض، السعودية</span><button id="stripRefresh" class="text-btn" type="button">تحديث المواقيت</button></div>
+        <p id="stripError" class="muted tiny" hidden></p>
+      </div>
+      <div class="strip-qibla">
+        <div class="qibla-compass" aria-hidden="true"><span class="qibla-north">شمال</span><div class="qibla-needle" id="qiblaNeedle">▲</div><span class="qibla-center">🕋</span></div>
+        <div class="qibla-info"><strong>اتجاه القبلة</strong><p id="qiblaText" class="muted">اضغط لعرض الاتجاه من مدينتك</p><div class="form-row"><button id="qiblaBtn" class="pill-btn" type="button">عرض اتجاه القبلة</button><button id="qiblaGeoBtn" class="pill-btn" type="button">موقعي الحالي</button></div></div>
+      </div>
+    </section>
+
     <section id="daily" class="daily-card">
       <div><span class="section-kicker">آية اليوم</span><h2>وَاذْكُر رَّبَّكَ إِذَا نَسِيتَ</h2><p class="verse-ref">سورة الكهف — الآية ٢٤</p></div>
       <button class="text-btn" id="copyVerse">نسخ الآية ⧉</button>
