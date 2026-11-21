@@ -146,9 +146,14 @@ function renderQuran(){
 function renderTasbih(){
   showPanel("المسبحة الإلكترونية", `<div class="tasbih-wrap"><p class="muted">اضغط على المسبحة لزيادة العدد</p><div id="tasbihCount" class="tasbih-count">${tasbih}</div><button id="tasbihTap" class="tasbih-button" aria-label="زيادة التسبيح">سبّح الله</button><div><button id="tasbihReset" class="secondary-btn">إعادة التصفير</button><button id="tasbihPlus" class="secondary-btn">+1</button></div><small class="muted">يُحفظ العدد على هذا الجهاز.</small></div>`);
   const update=()=>{$("#tasbihCount").textContent=tasbih;localStorage.setItem("zad_tasbih",tasbih);};
-  $("#tasbihTap").addEventListener("click",()=>{tasbih++;update();});
-  $("#tasbihPlus").addEventListener("click",()=>{tasbih++;update();});
-  $("#tasbihReset").addEventListener("click",()=>{if(confirm("هل تريد تصفير عداد التسبيح؟")){tasbih=0;update();}});
+  const tap=()=>{tasbih++;update();if(navigator.vibrate){if(tasbih%33===0||tasbih%100===0)navigator.vibrate([70,40,70]);else navigator.vibrate(15);}};
+  $("#tasbihTap").addEventListener("click",tap);
+  $("#tasbihPlus").addEventListener("click",tap);
+  let resetArmed=false,resetTimer=null;
+  $("#tasbihReset").addEventListener("click",e=>{
+    if(!resetArmed){resetArmed=true;e.currentTarget.textContent="متأكد؟ اضغط مرة أخرى للتصفير";resetTimer=setTimeout(()=>{resetArmed=false;e.currentTarget.textContent="إعادة التصفير";},3000);return;}
+    clearTimeout(resetTimer);resetArmed=false;e.currentTarget.textContent="إعادة التصفير";tasbih=0;update();
+  });
 }
 function drawPrayerResult(out,data,city,country){
   const t=data.timings;
